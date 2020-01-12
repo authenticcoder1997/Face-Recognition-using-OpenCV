@@ -15,9 +15,9 @@ import faceRecognition as fr
 # cv2.waitKey(0)
 # cv2.destroyAllWindows
 
-# faces,faceID=fr.labels_for_training_data('C:/Users/parag/OneDrive/Documents/Projects/Artificial Intelligence/Face Recognition/trainingImages')
-# face_recognizer=fr.train_classifier(faces,faceID)
-# face_recognizer.save('trainingData.yml')
+faces,faceID=fr.labels_for_training_data('C:/Users/parag/OneDrive/Documents/Projects/Artificial Intelligence/Face Recognition/trainingImages')
+face_recognizer=fr.train_classifier(faces,faceID)
+face_recognizer.save('trainingData.yml')
 face_recognizer=cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.read('C:/Users/parag/OneDrive/Documents/Projects/Artificial Intelligence/Face Recognition/trainingData.yml')
 
